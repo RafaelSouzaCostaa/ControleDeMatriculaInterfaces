@@ -27,7 +27,7 @@ public final class Curso implements IMatricula{
     
     private ArrayList<String> disciplinasMatriculadas;
     private ArrayList<String> cursosMatriculados;
-
+ 
     public Curso(String nome, String qtdPeriodo, String horario) {
         this.nome = nome;
         this.qtdPeriodo = qtdPeriodo;
