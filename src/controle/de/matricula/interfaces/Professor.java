@@ -113,38 +113,47 @@ public final class Professor implements IPessoa, IMatricula{
         this.documento = documento;
     }
 
+    @Override
     public String getTypeMatricula() {
         return typeMatricula;
     }
 
+    @Override
     public void setTypeMatricula(String typeMatricula) {
         this.typeMatricula = typeMatricula;
     }
 
+    @Override
     public String getNumeroMatricula() {
         return numeroMatricula;
     }
 
+    @Override
     public boolean isAtiva() {
         return ativa;
     }
-
+    
+    @Override
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
     }
     
+    @Override
     public Date getDataMatricula() {
         return dataMatricula;
     }
 
+    @Override
     public void setDataMatricula(Date dataMatricula) {
         this.dataMatricula = dataMatricula;
     }
 
+    @Override
     public ArrayList<String> getDisciplinasMatriculadas() {
         return disciplinasMatriculadas;
     }
 
+    @Override
     public void setDisciplinasMatriculadas(String disciplina) {
         if(this.disciplinasMatriculadas == null){
             this.disciplinasMatriculadas = new ArrayList<>();
@@ -152,10 +161,12 @@ public final class Professor implements IPessoa, IMatricula{
         this.disciplinasMatriculadas.add(disciplina);
     }
 
+    @Override
     public ArrayList<String> getCursosMatriculados() {
         return cursosMatriculados;
     }
 
+    @Override
     public void setCursosMatriculados(String curso) {
         if(cursosMatriculados == null){
             this.cursosMatriculados = new ArrayList<>();
@@ -163,6 +174,7 @@ public final class Professor implements IPessoa, IMatricula{
         this.cursosMatriculados.add(curso);
     }
     
+    @Override
     public boolean checkTheDisciplina(String disciplina){
         if(this.disciplinasMatriculadas.contains(disciplina)){
             return true;
@@ -170,6 +182,7 @@ public final class Professor implements IPessoa, IMatricula{
         return false;
     }
     
+    @Override
     public boolean checkTheMateria(String curso){
         if(this.cursosMatriculados.contains(curso)){
             return true;
